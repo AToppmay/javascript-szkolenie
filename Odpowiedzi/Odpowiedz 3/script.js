@@ -4,7 +4,7 @@ const koło = {
     obwod(r) {
         return this.pi * 2 * r
     },
-    pole() {
+    pole(r) {
         return this.pi * Math.pow(r, 2)
     },
 }
@@ -13,12 +13,7 @@ const koło = {
 // Przykład 2
 const tabela = [{ imie: 'Jan', wiek: 65 }, { imie: 'Ala', wiek: 32 }, { imie: 'Piotr', wiek: 25 }]
 
-const lata = tabela.map((osoba) => osoba.wiek);
-let srednia = 0;
-lata.forEach((wiek) => srednia = srednia + wiek);
-srednia = srednia / lata.length;
-
-console.log('Średnia: ', srednia);
+tabela.forEach((osoba) => console.log(osoba.wiek));
 
 
 // Przykład 3

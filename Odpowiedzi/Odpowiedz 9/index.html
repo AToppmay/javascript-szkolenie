@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        code {
+            background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+            padding: 2px;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-16 bg-white antialiased">
+    <main class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue">
+        <h1 class="mb-4 text-3xl font-extrabold leading-tight text-gray-900">Zadanie 4. Funkcje Async</h1>
+        
+        <p>
+            W tym zadaniu przybliżone zostaną pobieranie i wysyłanie danych z/do API. Będziemy się posługiwać wbudowanym w przeglądarkę <code>Fetch API</code> (dokumentację można znaleźć tutaj: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" target="_blank" class="underline text-blue-600">Dokumentacja Fetch API</a>). Za źródło danych posłuży nam JSONPlaceholder (<a href="https://jsonplaceholder.typicode.com/guide/" class="underline text-blue-600">Strona o JSONPlaceholder</a>).
+        </p>
+
+        <p class="mt-4">
+            Celem zadania będzie wyświetlenie danych pobranych z API oraz stworzenie nowego "postu" i wyświetlenie jego danych. W kodzie umieszczone są API URLe do poszczególnych podpunktów.
+        </p>
+
+        <p class="mt-4">
+            Należy przygotować 3 funkcje, które będą wywołane poniższymi przyciskami:
+            <ol class="list-decimal">
+                <li class="ml-6">Pobierz 10 postów - należy przygotować funkcję, która pobierze posty i wyświetli <code>id</code> oraz <code>title</code> dziesięciu z nich.</li>
+                <li class="ml-6">Pobierz 23. post - należy przygotować funkcję, która pobierze post z id 23 i wyświetli jego <code>title</code> oraz <code>body</code></li>
+                <li class="ml-6">Stwórz nowy post - należy przygotować funkcję, która wyśle żądanie do API o stworzenie nowego postu z <code>title</code> o wartości <code>SAP JS Course</code> i wyświetli jego <code>ID</code> oraz <code>title</code></li>
+            </ol>
+        </p>
+        <h2 class="mb-4 text-xl font-bold leading-tight text-gray-900">Rozwiązanie:</h2>
+        <p>
+            Prawidłowym rozwiazaniem tego zadania jest taki wynik:
+            <pre class="mt-4 bg-gray-200 p-4 rounded-lg">
+string: "10 Postów"
+number: 1
+string: "sunt aut facere repellat provident occaecati excepturi optio reprehenderit"
+number: 2
+string: "qui est esse"
+number: 3
+string: "ea molestias quasi exercitationem repellat qui ipsa sit aut"
+number: 4
+string: "eum et est occaecati"
+number: 5
+string: "nesciunt quas odio"
+number: 6
+string: "dolorem eum magni eos aperiam quia"
+number: 7
+string: "magnam facilis autem"
+number: 8
+string: "dolorem dolore est ipsam"
+number: 9
+string: "nesciunt iure omnis dolorem tempora et accusantium"
+number: 10
+string: "optio molestias id quia eum"
+string: "23. Post"
+string: "maxime id vitae nihil numquam"
+string: "veritatis unde neque eligendi\nquae quod architecto quo neque vitae\nest illo sit tempora doloremque fugit quod\net et vel beatae sequi ullam sed tenetur perspiciatis"
+string: "Nowy Post"
+number: 101
+string: "SAP JS Course"
+            </pre>
+        </p>
+        <h2 class="mb-4 text-xl font-bold leading-tight text-gray-900">Przestrzeń robocza</h2>
+        <p>Ta przestrzeń podłączona jest do funkcji wyświetlającej wyniki kodu. Aby wyświetlić wyniki przetwarzania, należy użyć przygotowanej funkcji "wyswietl".</p>
+        <button id="pierwszy" class="bg-orange-400 px-4 py-2 rounded-lg">Pobierz 10 postów</button>
+        <button id="drugi" class="bg-orange-400 px-4 py-2 rounded-lg">Pobierz 23. post</button>
+        <button id="trzeci" class="bg-orange-400 px-4 py-2 rounded-lg">Stwórz nowy post</button>
+    
+        <pre id="wyniki" class="mt-4 bg-gray-200 p-4 rounded-lg"></pre>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>

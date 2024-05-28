@@ -1,4 +1,4 @@
-import { pierwszyCiag, drugiCiag, trzeciCiag } from '../../Zadania/Zadanie 4/data.js';
+import { pierwszyCiag, drugiCiag, trzeciCiag } from '../../Zadania/Zadanie 4a/data.js';
 import { wyswietl } from '../../shared/helpers.js';
 
 

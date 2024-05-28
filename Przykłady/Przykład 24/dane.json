@@ -1,0 +1,11 @@
+{
+    "imie": "Adam",
+    "wiek": 24,
+    "maPsa": false,
+    "wzrost": null,
+    "hobby": ["Siatkówka", "Programowanie"],
+    "praca": {
+        "firma": "All-For-One",
+        "pozycja": "Frontend"
+    }
+}

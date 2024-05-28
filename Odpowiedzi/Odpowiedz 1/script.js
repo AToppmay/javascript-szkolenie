@@ -1,4 +1,6 @@
-// Przykład 1
+// Przykład A
+// Podpowiedź: domena znajduje się pomiędzy znakiem "@", a "."
+
 const email1 = 'jankowalski@gmail.com';
 const email2 = 'jankowalski@all-for-one.com';
 
@@ -12,7 +14,7 @@ console.log(domenaEmailu(email1));
 console.log(domenaEmailu(email2));
 
 
-// Przykład 2
+// Przykład B
 function odwrocLitery(tekst) {
     let odpowiedz = '';
     for(let i = 0; i < tekst.length; i++) {

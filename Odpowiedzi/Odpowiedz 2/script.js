@@ -15,18 +15,6 @@ const emaile = imiona.map((el) => {
 
 console.log(emaile);
 
-// Przykład 3
-const tabela = [256, 163, 22, 131, 421, 11, 300];
-const wynik = [];
-
-tabela.forEach((el) => {
-    if (el > 200) {
-        wynik.push(el);
-    }
-})
-
-console.log(wynik);
-
 
 // Przykład 3
 const telewizory = [4500, 7899, 5000, 3999];

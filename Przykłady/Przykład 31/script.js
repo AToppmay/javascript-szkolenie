@@ -1,0 +1,1 @@
+fetch('https://www.netflix.com/pl/', { mode: 'cors' }).then(() => {}).catch(() => {});

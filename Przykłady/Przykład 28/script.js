@@ -1,32 +1,18 @@
-// Manipulacja DOMu
-
-// Id
-const pierwszyElement = document.getElementById('pierwszy');
-console.log(pierwszyElement);
-
-// Class
-const elementy = document.getElementsByClassName('opis');
-console.log(elementy);
-
-// Tag
-const tags = document.getElementsByTagName('div');
-console.log(tags);
+// Eventy
+const przycisk = document.getElementById('przycisk');
 
 
-
-// Dodanie tekstu
-// const pusty = document.getElementById('pusty');
-// pusty.innerText = 'Już nie pusty element';
-
-// Zmiana atrybutu
-// const link = document.getElementById('link');
-// console.log('Link: ', link.getAttribute('href'));
-
-// link.setAttribute('href', 'https://www.youtube.com/');
+// On Click
+przycisk.addEventListener('click', (event) => console.log(event));
 
 
+// On Mouse Over
+const element = document.getElementById('element');
+element.addEventListener('mouseover', (event) => console.log(event));
 
-// Tworzenie nowych elementów
-// const nowyElement = document.createElement('div');
-// nowyElement.innerHTML = '- Dziecko pustego elementu'
-// pusty.appendChild(nowyElement);
+
+// On Key Down
+const input = document.getElementById('input');
+input.addEventListener('keydown', (event) => {
+    console.log(event)
+});

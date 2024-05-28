@@ -1,0 +1,18 @@
+Zadanie 5. Stworzenie pliku HTML i podłączenie pliku z Jsem
+
+W tym zadaniu przybliżone zostanie tworzenie pliku HTML z paroma elementami i podłączenie do HTML pliku JavaScript. Będziemy się posługiwać składnią HTML do przygotowania prostej strony internetowej
+
+Celem zadania będzie napisanie strony w HTML z wymaganiami podanymi poniżej. Przykład strony wynikowej (screenshot) dostępny jest w pliku "przykład.png". Do gotowej strony należy podłączyć plik Javascript "main.js".
+
+Należy przygotować stronę z podanymi elementami:
+- Nagłówek poziomu 1. z treścią: SAP Javascript Course oraz id "main-heading"
+- Paragraf z dowolnym tekstem oraz klasą "paragraf"
+- Listę numerowaną z następującymi elementami: Lorem; Ipsum; Dolor; Sit; Amet oraz klasą "lista-numerowana"
+- Listę punktowaną z odnośnikami do stron i id "pomocne-linki": 
+    - https://developer.mozilla.org/en-US/docs/Web/JavaScript
+    - https://www.all-for-one.pl/pl/
+    - https://sapui5.hana.ondemand.com/
+
+    Podpowiedź: linki do stron należy umieścić w elementach listy w tagu <a>, eg. <li><a href="...">...</a></li>
+- 3 przyciski: SAP; Javascript; Course
+- Podłączony skrypt Javascript "main.js" przed zamknięciem body strony - jeżeli skrypt jest podłączony dobrze, a strona jest zbudowana zgodnie z poleceniami, zobaczysz komunikat "Wszystkie elementy są zgodne. Zadanie zaliczone!". W przeciwnym wypadku należy dokonać poprawek.
